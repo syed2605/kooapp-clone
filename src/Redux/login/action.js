@@ -6,7 +6,7 @@ import {
   LOGOUT,
 } from "./actionTypes";
 
-const json_URL = `http://localhost:8080/loggedUser`;
+const json_URL = `https://vast-colt-shoulder-pads.cyclic.app/loggedUser`;
 
 const setLogin = (payload) => {
   return (dispatch) => {

@@ -269,7 +269,7 @@ function Feed() {
               return (
                 <div>
                   {posts.map((e) => {
-                    let Image1 = loggedUser.picture;
+                    let Image1 = "";
                     let {
                       postsID,
                       days,

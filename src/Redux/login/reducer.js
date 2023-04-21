@@ -7,7 +7,7 @@ import {
 
 import axios from "axios";
 
-const json_URL = `http://localhost:8080/loggedUser`;
+const json_URL = `https://vast-colt-shoulder-pads.cyclic.app/loggedUser`;
 let initData = { isAuth: false, token: "", isLoading: false, isError: false };
 
 const getInitialState = async () => {

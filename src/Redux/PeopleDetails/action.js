@@ -5,10 +5,10 @@ import { GET_FEED_DATA,GET_CHANGE_DATA } from "./actionType"
 let getData = (i) => {
     return (dispatch) => {
       i === 0
-        ? axios.get(`http://localhost:8080/peopleData`).then((res) => {
+        ? axios.get(`https://vast-colt-shoulder-pads.cyclic.app/peopleData`).then((res) => {
             return dispatch(redData(res.data));
           })
-        : axios.get(`http://localhost:8080/feedData`).then((res) => {
+        : axios.get(`https://vast-colt-shoulder-pads.cyclic.app/feedData`).then((res) => {
             return dispatch(blueData(res.data));
           });
     };
@@ -134,7 +134,7 @@ let blueData = (data)=>{
 const putData = (send,id1) => {
   console.log(send,id1,"in actionnn")
     return (dispatch) => {
-      fetch(`http://localhost:8080/peopleData/${id1}`, {
+      fetch(`https://vast-colt-shoulder-pads.cyclic.app/peopleData/${id1}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

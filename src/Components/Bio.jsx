@@ -93,11 +93,11 @@ const Bio = () => {
   };
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/user`).then((res) => {
+    axios.get(`https://vast-colt-shoulder-pads.cyclic.app/loggedUser`).then((res) => {
       setData(res.data);
     });
     axios
-      .patch(`http://localhost:8000/user`, {
+      .patch(`https://vast-colt-shoulder-pads.cyclic.app/loggedUser`, {
         profileImg: JSON.stringify(images),
       })
       .then((res) => {

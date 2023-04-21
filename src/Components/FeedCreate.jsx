@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import {
   Text,
   Avatar,
@@ -18,7 +18,13 @@ import acc_Img from "../Images/acct.svg";
 function FeedCreate() {
     // let { Image } = useSelector((state) => state.LoggedReducer);
     let  loggedUser  = useSelector((state) => state.loggedReducer.loggedUser);
-    let Image=loggedUser.picture;
+    let isAuth = useSelector((state) => {
+      return state.loginReducer.isAuth;
+    });
+    let Image=isAuth? loggedUser.picture: "";
+    useEffect(()=>{
+
+    })
   return (
     <div style={{ pointer: "cursor" }}>
       <Link to="/create">

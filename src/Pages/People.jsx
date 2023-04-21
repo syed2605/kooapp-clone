@@ -19,7 +19,7 @@ const People = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/peopleData`).then((res) => {
+    axios.get(`https://vast-colt-shoulder-pads.cyclic.app/peopleData`).then((res) => {
       setData(res.data);
     });
   }, []);

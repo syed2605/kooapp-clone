@@ -29,7 +29,7 @@ const Rsidebar = () => {
   let [queryData, setqueryData] = useState([]);
 
   useEffect(() => {
-    const json_URL = `http://localhost:8080/peopleData`;
+    const json_URL = `https://vast-colt-shoulder-pads.cyclic.app/peopleData`;
 
     const getInitialState = async () => {
       let res = await axios.get(json_URL);

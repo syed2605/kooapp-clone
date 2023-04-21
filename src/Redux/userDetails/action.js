@@ -4,7 +4,7 @@ import { GET_POST_USER_DATA } from "./actionType";
 
 let getData2 = ()=>{
     return (dispatch)=>{
-       axios.get(`http://localhost:8080/loggedUser`)
+       axios.get(`https://vast-colt-shoulder-pads.cyclic.app/loggedUser`)
        .then((res)=>{
         return dispatch(redData(res.data))
        })

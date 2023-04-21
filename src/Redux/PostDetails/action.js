@@ -11,7 +11,7 @@ import { GET_POST_DATA } from "./actionType";
 
 let getData1 = ()=>{
     return (dispatch)=>{
-       axios.get(`http://localhost:8080/userposts`)
+       axios.get(`https://vast-colt-shoulder-pads.cyclic.app/userposts`)
        .then((res)=>{
         // console.log(res.data,"")
         return dispatch(redData(res.data))
@@ -28,7 +28,7 @@ let redData = (data)=>{
 
 let postData = (data)=>{
     return (dispatch)=>{
-        axios.post(`http://localhost:8080/userposts`,{
+        axios.post(`https://vast-colt-shoulder-pads.cyclic.app/userposts`,{
             data
         })
         .then((res)=>{
@@ -41,7 +41,7 @@ let postData = (data)=>{
 const putData1 = (send,id1) => {
   console.log(send,id1,"in actionnn")
     return (dispatch) => {
-      fetch(`http://localhost:8080/userposts/${id1}`, {
+      fetch(`https://vast-colt-shoulder-pads.cyclic.app/userposts/${id1}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
