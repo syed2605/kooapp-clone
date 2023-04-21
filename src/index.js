@@ -11,13 +11,13 @@ import { store } from './Redux/store';
 import FeedContextProviderComponent from "../src/Context/FeedContext";
 
 
-const clientID ="147260584431 - dsp5dsqk22jsa3u1lq121ls6iesj6rkc.apps.googleusercontent.com";
+const clientID ="169509513481-0bjq15s60142tqce1su7947pvudk2ecr.apps.googleusercontent.com";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ChakraProvider>
     <BrowserRouter>
-      <GoogleOAuthProvider clientId="147260584431-dsp5dsqk22jsa3u1lq121ls6iesj6rkc.apps.googleusercontent.com">
+      <GoogleOAuthProvider clientId="169509513481-0bjq15s60142tqce1su7947pvudk2ecr.apps.googleusercontent.com">
         <Provider store={store}>
           <FeedContextProviderComponent>
             <App />
